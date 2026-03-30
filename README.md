@@ -2,19 +2,9 @@
 
 Desktop app for macOS and Windows using Electron.
 
-## Run
+## Downloads
 
-```bash
-npm install
-npm start
-```
-
-## Packaging
-
-```bash
-npm run dist:mac
-npm run dist:win
-```
+Go to releases
 
 ## Features
 
