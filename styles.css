@@ -70,11 +70,20 @@ button:active { transform: scale(0.98); }
 .timeout-state { text-align: center; display: grid; gap: 4px; }
 #timeout-countdown { font-size: 26px; }
 .stats-grid { display: grid; grid-template-columns: repeat(2, minmax(300px, 1fr)); gap: 12px; margin-top: 12px; }
-.stats-team table { width: 100%; border-collapse: collapse; font-size: 12px; table-layout: fixed; }
-th, td { border-bottom: 1px solid var(--line); padding: 6px 4px; text-align: center; }
+.stats-team table { width: 100%; border-collapse: collapse; font-size: 11px; table-layout: fixed; }
+th, td { border-bottom: 1px solid var(--line); padding: 4px 3px; text-align: center; vertical-align: top; }
 th:first-child, td:first-child { text-align: left; }
-.actions { display: grid; grid-template-columns: repeat(4, minmax(44px, 1fr)); gap: 4px; }
-.actions button { padding: 6px; font-size: 11px; }
+th:nth-child(n + 2):nth-child(-n + 7),
+td:nth-child(n + 2):nth-child(-n + 7) { width: 42px; }
+th:last-child,
+td:last-child { width: 46%; }
+.actions { display: grid; grid-template-columns: repeat(5, minmax(36px, 1fr)); gap: 3px; }
+.actions button { padding: 5px 4px; font-size: 10px; min-height: 28px; }
+.actions button[data-edit],
+.actions button[data-reset] { grid-column: span 2; }
+#start-resume:hover,
+#end-game:hover,
+#copy-export:hover { color: #000; }
 .transition-card { margin-top: 10px; background: #eef4ff; border: 1px solid #b9d3ff; border-radius: 10px; padding: 12px; display: grid; gap: 6px; }
 .hidden { display: none !important; }
 .edit-modal {
