@@ -11,7 +11,7 @@ Download the latest version from:
 
 👉 https://github.com/zzzachariah9828-source/Basketball-Stats/releases
 
-(macOS `.dmg` and Windows `.exe` available)
+(only macOS `.dmg` available)
 
 ---
 
